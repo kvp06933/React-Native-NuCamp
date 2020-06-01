@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView, FlatList } from 'react-native';
 import { Card } from 'react-native-elements';
 import { CAMPSITES } from '../shared/campsites';
+import { COMMENTS } from '../shared/comments';
+
+
+
 
 function RenderCampsite({campsite}) {
    
@@ -19,12 +23,19 @@ function RenderCampsite({campsite}) {
     return <View />;
 }
 
+function RenderComment({comments}) {
+
+    const
+    }
+}
+
 class CampsiteInfo extends Component {
     
     constructor(props) {
         super(props);
         this.state = {
-            campsites: CAMPSITES
+            campsites: CAMPSITES,
+            comments: COMMENTS
         };
     }
 
